@@ -1106,7 +1106,7 @@
                 "console_type": "telnet",
                 "custom_adapters": [],
                 "first_port_name": "",
-                "height": 48,
+                "height": 32,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #ffffff;fill-opacity: 1.0;",
@@ -1162,9 +1162,9 @@
                     "uefi": false,
                     "usage": "There is no default password and enable password. There is no default configuration present."
                 },
-                "symbol": ":/symbols/classic/multilayer_switch.svg",
+                "symbol": ":/symbols/classic/ethernet_switch.svg",
                 "template_id": "d8e3530f-a8db-40d7-b8db-e5d98829d903",
-                "width": 51,
+                "width": 72,
                 "x": -521,
                 "y": -40,
                 "z": 1
@@ -1176,7 +1176,7 @@
                 "console_type": "telnet",
                 "custom_adapters": [],
                 "first_port_name": "",
-                "height": 48,
+                "height": 32,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #ffffff;fill-opacity: 1.0;",
@@ -1232,9 +1232,9 @@
                     "uefi": false,
                     "usage": "There is no default password and enable password. There is no default configuration present."
                 },
-                "symbol": ":/symbols/classic/multilayer_switch.svg",
+                "symbol": ":/symbols/classic/ethernet_switch.svg",
                 "template_id": "d8e3530f-a8db-40d7-b8db-e5d98829d903",
-                "width": 51,
+                "width": 72,
                 "x": -445,
                 "y": 253,
                 "z": 1
@@ -1246,7 +1246,7 @@
                 "console_type": "telnet",
                 "custom_adapters": [],
                 "first_port_name": "",
-                "height": 48,
+                "height": 32,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #ffffff;fill-opacity: 1.0;",
@@ -1302,9 +1302,9 @@
                     "uefi": false,
                     "usage": "There is no default password and enable password. There is no default configuration present."
                 },
-                "symbol": ":/symbols/classic/multilayer_switch.svg",
+                "symbol": ":/symbols/classic/ethernet_switch.svg",
                 "template_id": "d8e3530f-a8db-40d7-b8db-e5d98829d903",
-                "width": 51,
+                "width": 72,
                 "x": -26,
                 "y": 238,
                 "z": 1
