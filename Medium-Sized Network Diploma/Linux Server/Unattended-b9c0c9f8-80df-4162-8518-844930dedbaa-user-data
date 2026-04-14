@@ -1,0 +1,63 @@
+#cloud-config
+autoinstall:
+  # version is an Autoinstall required field.
+  version: 1
+
+  apt:
+    fallback: offline-install
+
+  locale: en_US
+  keyboard:
+    layout: us
+
+  shutdown: reboot
+
+  storage:
+    layout:
+      name: direct
+    swap:
+      size: 0
+
+
+
+
+
+  # Custom Commands.
+  late-commands:
+    - cp /cdrom/vboxpostinstall.sh /target/root/vboxpostinstall.sh
+    - chmod +x /target/root/vboxpostinstall.sh
+    - curtin in-target --target=/target -- /bin/bash /root/vboxpostinstall.sh --direct
+
+  # Additional cloud-init configuration affecting the target system can be supplied
+  # underneath a user-data section inside of autoinstall.
+  user-data:
+    hostname: 'Server'
+    users:
+      - name: root
+        primary_group: root
+        groups: sudo
+        lock-passwd: false
+        passwd: '$6$lTqJbuVUOqFGToiG$l4zsw1voqi341U6zYwDkg9FLzq6RKrg2HjQi6jjRZd3xtp5xVNoiF.qdbQFNSUoMn1HMEEuasnYcp2ldCOL3x/'
+        uid: 0
+
+      - name: 'linuxserver'
+        gecos: 'linuxserver'
+        primary_group: 'linuxserver'
+
+
+        groups: sudo
+
+        lock-passwd: false
+        shell: /bin/bash
+        passwd: '$6$WV4AbhIKRUxvD.QQ$eQNBoSr/OvLkxzDVr5gsFBdueZ7u/96zexdlhFbwpjQzwwj57kqrXVgkE9LChwU9CSkSRx.6Ssb2aeQOTqLCX0'
+
+
+    timezone: Etc/UTC
+
+
+
+    ntp:
+
+
+        enabled: true
+

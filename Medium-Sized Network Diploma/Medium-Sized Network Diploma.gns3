@@ -48,38 +48,6 @@
         "links": [
             {
                 "filters": {},
-                "link_id": "4d353bd1-b27d-47e8-8699-e4ef06e7f4ef",
-                "link_style": {},
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "Ethernet 2",
-                            "x": 78,
-                            "y": 74
-                        },
-                        "node_id": "65b36653-ac8e-4b62-a167-2d840ae1ce74",
-                        "port_number": 2
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f0/0",
-                            "x": 33,
-                            "y": -29
-                        },
-                        "node_id": "66427c62-9aa5-43d9-91f9-46d8f1ad050a",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "33bd9a7e-257b-405e-844d-ab7812a2db80",
                 "link_style": {},
                 "nodes": [
@@ -131,7 +99,7 @@
                         "adapter_number": 1,
                         "label": {
                             "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #ffffff;fill-opacity: 1.0;",
                             "text": "g1/0",
                             "x": 1,
                             "y": 46
@@ -525,6 +493,38 @@
                     }
                 ],
                 "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "3b802ac4-c7b3-49e4-9800-726995ab5d93",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "nat0",
+                            "x": 0,
+                            "y": 39
+                        },
+                        "node_id": "84d7a662-7df4-4a0b-8113-edc89bd76832",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #ffffff;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 72,
+                            "y": 19
+                        },
+                        "node_id": "66427c62-9aa5-43d9-91f9-46d8f1ad050a",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
             }
         ],
         "nodes": [
@@ -693,129 +693,6 @@
                 "width": 65,
                 "x": -665,
                 "y": -214,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": "none",
-                "custom_adapters": [],
-                "first_port_name": null,
-                "height": 71,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "ISP/Cloud",
-                    "x": 43,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "ISP/Cloud",
-                "node_id": "65b36653-ac8e-4b62-a167-2d840ae1ce74",
-                "node_type": "cloud",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "interfaces": [
-                        {
-                            "name": "Wi-Fi",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Bluetooth Network Connection",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Local Area Connection",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "OpenVPN Connect DCO Adapter",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Tailscale",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Ethernet 2",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Radmin VPN",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Ethernet",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "Ethernet 3",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "VMware Network Adapter VMnet1",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "VMware Network Adapter VMnet8",
-                            "special": true,
-                            "type": "ethernet"
-                        }
-                    ],
-                    "ports_mapping": [
-                        {
-                            "interface": "OpenVPN Connect DCO Adapter",
-                            "name": "OpenVPN Connect DCO Adapter",
-                            "port_number": 0,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Tailscale",
-                            "name": "Tailscale",
-                            "port_number": 1,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Ethernet 2",
-                            "name": "Ethernet 2",
-                            "port_number": 2,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Ethernet",
-                            "name": "Ethernet",
-                            "port_number": 3,
-                            "type": "ethernet"
-                        },
-                        {
-                            "interface": "Ethernet 3",
-                            "name": "Ethernet 3",
-                            "port_number": 4,
-                            "type": "ethernet"
-                        }
-                    ],
-                    "remote_console_host": "",
-                    "remote_console_http_path": "/",
-                    "remote_console_port": 23,
-                    "remote_console_type": "none"
-                },
-                "symbol": ":/symbols/cloud.svg",
-                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
-                "width": 159,
-                "x": 230,
-                "y": -354,
                 "z": 1
             },
             {
@@ -1307,6 +1184,44 @@
                 "width": 72,
                 "x": -26,
                 "y": 238,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": null,
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 71,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "NAT1",
+                    "x": 57,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "NAT1",
+                "node_id": "84d7a662-7df4-4a0b-8113-edc89bd76832",
+                "node_type": "nat",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "ports_mapping": [
+                        {
+                            "interface": "VMware Network Adapter VMnet8",
+                            "name": "nat0",
+                            "port_number": 0,
+                            "type": "ethernet"
+                        }
+                    ]
+                },
+                "symbol": ":/symbols/nat.svg",
+                "template_id": "df8f4ea9-33b7-3e96-86a2-c39bc9bb649c",
+                "width": 159,
+                "x": 243,
+                "y": -351,
                 "z": 1
             }
         ]
